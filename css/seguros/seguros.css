@@ -11,6 +11,10 @@
     align-items: center;
 }
 
+#seguros .seguro {
+    padding-top: 0px;
+}
+
 .seguros h2 {
     grid-column: 1/-1;
 }
@@ -20,6 +24,7 @@
     padding: 32px 32px 32px 60px;
     display: grid;
     grid-template-columns: 1fr auto;
+    border-radius: 4px;
 }
 
 .seguros-item h3 {
@@ -37,7 +42,7 @@
     margin-bottom: 32px;
 }
 
-.seguro-item li {
+.seguros-item li {
     display: flex;
     align-items: center;
    position: relative;
@@ -60,4 +65,10 @@
 
 .seguros-item a {
     grid-column: 1/-1;
+}
+
+@media (max-width: 800px) {
+    .seguros {
+        grid-template-columns: 1fr;
+    }
 }
